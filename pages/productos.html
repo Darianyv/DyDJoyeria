@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y servicios | D&amp;D Joyería</title>
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <div class="topbar">Envíos a todo el país · Garantía certificada · Pago seguro</div>
+
+    <header class="main-header header-interno">
+        <form class="search" role="search" action="#">
+            <label for="buscar" class="sr-only">Buscar joyas</label>
+            <input type="search" id="buscar" name="q" placeholder="Buscar joyas...">
+            <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg></button>
+        </form>
+
+        <a class="logo" href="../index.html"><img src="../assets/icons/logo-dyd-joyeria.svg" alt="D&D Joyería" width="743" height="614"></a>
+
+        <div class="header-icons">
+            <a href="#" class="icon-link"><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><small>Cuenta</small></a>
+            <a href="#" class="icon-link icon-favoritos"><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.5-8 11-8 11z"/></svg></span><small>Favoritos</small></a>
+            <a href="#" class="icon-link"><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span><small>Carrito</small></a>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Productos y servicios</h1>
+            <p class="breadcrumb"><a href="../index.html">Inicio</a> / <span aria-current="page">Productos / Servicios</span></p>
+        </section>
+
+        <section class="catalog container">
+            <aside class="filters" aria-label="Filtros">
+                <h2>Filtrar por</h2>
+                <fieldset><legend>Categoría</legend><label><input type="checkbox" name="categoria" value="aretes"> Aretes</label><label><input type="checkbox" name="categoria" value="collares"> Collares</label><label><input type="checkbox" name="categoria" value="anillos"> Anillos</label><label><input type="checkbox" name="categoria" value="pulseras"> Pulseras</label><label><input type="checkbox" name="categoria" value="Tobilleras"> Tobilleras</label></fieldset>
+                <fieldset><legend>Material</legend><label><input type="checkbox" name="material" value="Oro 18k"> Oro 18k</label><label><input type="checkbox" name="material" value="Plata 925"> Plata 925</label><label><input type="checkbox" name="material" value="Oro rosa"> Oro rosa</label></fieldset>
+                <fieldset>
+                    <legend>Precio</legend>
+                    <div class="range-dual">
+                        <input type="range" id="precio-min" min="0" max="5000000" step="50000" value="0" aria-label="Precio mínimo">
+                        <input type="range" id="precio-max" min="0" max="5000000" step="50000" value="5000000" aria-label="Precio máximo">
+                    </div>
+                    <p class="range-labels"><span id="precio-min-txt">$ 0</span><span id="precio-max-txt">$ 5.000.000</span></p>
+                </fieldset>
+            </aside>
+
+            <div class="catalog-main">
+                <div class="toolbar">
+                    <p>Mostrando 6 de 6 productos</p>
+                    <label class="sr-only" for="orden">Ordenar por</label>
+                    <select id="orden" name="orden">
+                        <option>Ordenar por: Destacados</option>
+                        <option>Precio: menor a mayor</option>
+                        <option>Precio: mayor a menor</option>
+                        <option>Más recientes</option>
+                    </select>
+                </div>
+                <div class="catalog-grid">
+                    <article class="product">
+                        <img src="../assets/images/anillo-diamante.png" alt="Anillo con diamante">
+                        <h3>Anillo con diamante</h3>
+                        <p class="price">$ 000.000</p>
+                        <a href="#" class="btn btn-outline btn-xs">Ver producto</a>
+                    </article>
+                    <article class="product">
+                        <img src="../assets/images/cadena-aros-entrelazados-45cm.jpg" alt="Cadena aros entrelazados 45 cm">
+                        <h3>Cadena aros entrelazados 45 cm</h3>
+                        <p class="price">$ 000.000</p>
+                        <a href="#" class="btn btn-outline btn-xs">Ver producto</a>
+                    </article>
+                    <article class="product">
+                        <img src="../assets/images/pulsera-tejida-fina.png" alt="Pulsera tejida fina">
+                        <h3>Pulsera tejida fina</h3>
+                        <p class="price">$ 000.000</p>
+                        <a href="#" class="btn btn-outline btn-xs">Ver producto</a>
+                    </article>
+                    <article class="product">
+                        <img src="../assets/images/anillo-15-cumbre-dorada.jpg" alt="Anillo de 15 cumbre dorada">
+                        <h3>Anillo de 15 cumbre dorada</h3>
+                        <p class="price">$ 000.000</p>
+                        <a href="#" class="btn btn-outline btn-xs">Ver producto</a>
+                    </article>
+                    <article class="product">
+                        <img src="../assets/images/cadena-eslabon-pesada-3.jpg" alt="Cadena eslabón pesada calibre #3">
+                        <h3>Cadena eslabón pesada calibre #3</h3>
+                        <p class="price">$ 000.000</p>
+                        <a href="#" class="btn btn-outline btn-xs">Ver producto</a>
+                    </article>
+                    <article class="product">
+                        <img src="../assets/images/pulsera-tejida.png" alt="Pulsera tejida">
+                        <h3>Pulsera tejida</h3>
+                        <p class="price">$ 000.000</p>
+                        <a href="#" class="btn btn-outline btn-xs">Ver producto</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services container">
+            <h2 class="section-title">Nuestros servicios</h2>
+            <div class="services-grid">
+                <article class="service">
+                    <img src="../assets/images/reparacionymantenimiento.jpg" alt="">
+                    <div class="service-body">
+                        <h3>Reparación y mantenimiento</h3>
+                        <p>Arreglamos, limpiamos y devolvemos el brillo a tus joyas.</p>
+                        <a href="contactenos.html">Más información &rarr;</a>
+                    </div>
+                </article>
+                <article class="service">
+                    <img src="../assets/images/grabadopersonalizado.jpg" alt="">
+                    <div class="service-body">
+                        <h3>Grabado personalizado</h3>
+                        <p>Agrega nombres, fechas o frases a tus piezas favoritas.</p>
+                        <a href="contactenos.html">Más información &rarr;</a>
+                    </div>
+                </article>
+                <article class="service">
+                    <img src="../assets/images/diseñoamedida.jpg" alt="">
+                    <div class="service-body">
+                        <h3>Diseño a medida</h3>
+                        <p>Creamos la joya que imaginas, desde el boceto hasta el acabado.</p>
+                        <a href="contactenos.html">Más información &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/icons/logo-dyd-joyeria.svg" alt="D&D Joyería" width="743" height="614">
+                    <p class="footer-text">D&amp;D Joyería — Brilla a tu manera.</p>
+                    <div class="social">
+                        <a href="#" aria-label="Instagram"><img src="../assets/icons/instagram.svg" alt=""></a>
+                        <a href="#" aria-label="Facebook"><img src="../assets/icons/facebook.svg" alt=""></a>
+                        <a href="#" aria-label="WhatsApp"><img src="../assets/icons/whatsapp.svg" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Tienda</h3>
+                    <ul>
+                        <li><a href="productos.html">Anillos</a></li>
+                        <li><a href="productos.html">Collares</a></li>
+                        <li><a href="productos.html">Aretes</a></li>
+                        <li><a href="productos.html">Pulseras</a></li>
+                        <li><a href="productos.html">Tobilleras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="productos.html">Productos / Servicios</a></li>
+                        <li><a href="#">Garantía</a></li>
+                        <li><a href="#">Cuidado de tus joyas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contáctenos</h3>
+                    <ul>
+                        <li><a href="contactenos.html">Dirección</a></li>
+                        <li><a href="contactenos.html">Teléfono / WhatsApp</a></li>
+                        <li><a href="contactenos.html">Correo</a></li>
+                        <li><a href="contactenos.html">Horario de atención</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 D &amp; D Joyería. Todos los derechos reservados.</p>
+                <p>Creado por Daniela Misas y Dariana Vivas</p>
+                <div class="payments" aria-label="Medios de pago"><span></span><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

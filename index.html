@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&amp;D Joyería | Brilla a tu manera</title>
+    <meta name="description" content="D&amp;D Joyería: anillos, collares, aretes, pulseras, tobilleras y dijes con envíos a todo el país.">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="topbar">Envíos a todo el país · Garantía certificada · Pago seguro</div>
+
+    <!-- Encabezado -->
+    <header class="main-header">
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <a class="logo" href="index.html"><img src="assets/icons/logo-dyd-joyeria.svg" alt="D&D Joyería" width="743" height="614"></a>
+
+        <div class="header-icons">
+            <a href="#" class="icon-link"><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><small>Cuenta</small></a>
+            <a href="#" class="icon-link icon-favoritos"><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.5-8 11-8 11z"/></svg></span><small>Favoritos</small></a>
+            <a href="#" class="icon-link"><span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span><small>Carrito</small></a>
+        </div>
+
+        <nav class="nav-bar" id="menu">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="pages/quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner principal / Slider -->
+        <section class="hero" aria-roledescription="carrusel" aria-label="Banner principal">
+            <div class="slide slide-3d is-active" style="--img:url('assets/images/hero-1.jpg')">
+                <div class="slide-3d-text">
+                    <p class="slide-kicker">Nueva colección</p>
+                    <h1 class="slide-title">Joyas que cuentan tu historia</h1>
+                    <a href="pages/productos.html" class="btn btn-dark">Ver colección</a>
+                </div>
+                <div class="visor-3d" data-modelo="anillos">
+                    <canvas role="img" aria-label="Dos anillos dorados entrelazados en 3D. Arrastra para girarlos."></canvas>
+                    <span class="visor-hint">Arrastra para girar</span>
+                </div>
+            </div>
+            <div class="slide slide-3d" style="--img:url('assets/images/hero-anillos.jpg')">
+                <div class="slide-3d-text">
+                    <p class="slide-kicker">Colección novios</p>
+                    <h2 class="slide-title">Argollas y anillos para decir sí</h2>
+                    <a href="pages/productos.html" class="btn btn-dark">Ver colección</a>
+                </div>
+                <div class="visor-3d" data-modelo="anillos">
+                    <canvas role="img" aria-label="Dos anillos dorados entrelazados en 3D. Arrastra para girarlos."></canvas>
+                    <span class="visor-hint">Arrastra para girar</span>
+                </div>
+            </div>
+            <div class="slide slide-3d" style="--img:url('assets/images/hero-3.jpg')">
+                <div class="slide-3d-text">
+                    <p class="slide-kicker">Regalos</p>
+                    <h2 class="slide-title">Regala amor en cada ocasión</h2>
+                    <a href="pages/productos.html" class="btn btn-dark">Ver colección</a>
+                </div>
+                <div class="visor-3d" data-modelo="anillos">
+                    <canvas role="img" aria-label="Dos anillos dorados entrelazados en 3D. Arrastra para girarlos."></canvas>
+                    <span class="visor-hint">Arrastra para girar</span>
+                </div>
+            </div>
+ 
+            <button class="slider-arrow prev" type="button" aria-label="Banner anterior">&#8249;</button>
+            <button class="slider-arrow next" type="button" aria-label="Banner siguiente">&#8250;</button>
+            <div class="slider-dots"></div>
+        </section>
+
+        <!-- Categorías -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Categorías</h2>
+                <div class="categories-grid">
+                    <a href="pages/productos.html" class="cat"><img src="assets/images/anillo-diamante.png" alt=""><span>Anillos</span></a>
+                    <a href="pages/productos.html" class="cat"><img src="assets/images/cadena-aros-entrelazados-45cm.jpg" alt=""><span>Collares</span></a>
+                    <a href="pages/productos.html" class="cat"><img src="assets/images/ARETAS LARGAS.png" alt=""><span>Aretes</span></a>
+                    <a href="pages/productos.html" class="cat"><img src="assets/images/pulsera-tejida.png" alt=""><span>Pulseras</span></a>
+                    <a href="pages/productos.html" class="cat"><img src="assets/images/TOBILLERA.png" alt=""><span>Tobilleras</span></a>
+                    <a href="pages/productos.html" class="cat"><img src="assets/images/DIJE - CORONA.png" alt=""><span>Dijes</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos destacados -->
+        <section class="products">
+            <div class="container">
+                <h2 class="section-title">Productos destacados</h2>
+                <div class="products-grid">
+                    <a href="pages/productos.html" class="product"><img src="assets/images/anillo-diamante.png" alt="Anillo con diamante"><h3>Anillo con diamante</h3><p class="price">$ 000.000</p></a>
+                    <a href="pages/productos.html" class="product"><img src="assets/images/cadena-aros-entrelazados-45cm.jpg" alt="Cadena aros entrelazados 45 cm"><h3>Cadena aros entrelazados 45 cm</h3><p class="price">$ 000.000</p></a>
+                    <a href="pages/productos.html" class="product"><img src="assets/images/pulsera-tejida-fina.png" alt="Pulsera tejida fina"><h3>Pulsera tejida fina</h3><p class="price">$ 000.000</p></a>
+                    <a href="pages/productos.html" class="product"><img src="assets/images/anillo-15-cumbre-dorada.jpg" alt="Anillo de 15 cumbre dorada"><h3>Anillo de 15 cumbre dorada</h3><p class="price">$ 000.000</p></a>
+                    <a href="pages/productos.html" class="product"><img src="assets/images/cadena-eslabon-pesada-3.jpg" alt="Cadena eslabón pesada calibre #3"><h3>Cadena eslabón pesada calibre #3</h3><p class="price">$ 000.000</p></a>
+                    <a href="pages/productos.html" class="product"><img src="assets/images/pulsera-tejida.png" alt="Pulsera tejida"><h3>Pulsera tejida</h3><p class="price">$ 000.000</p></a>
+                </div>
+                <div class="center"><a href="pages/productos.html" class="btn btn-outline">Ver todo</a></div>
+            </div>
+        </section>
+
+        <!-- Banners promocionales -->
+        <section class="promos">
+            <article class="promo" style="--img:url('assets/images/banner-novios.jpg')">
+                <h2>Colección Novios</h2>
+                <p>Argollas y anillos de compromiso</p>
+                <a href="pages/productos.html" class="btn btn-outline btn-small">Ver más</a>
+            </article>
+            <article class="promo" style="--img:url('assets/images/banner-regalos.jpg')">
+                <h2>Regala amor</h2>
+                <p>Joyas para cada ocasión</p>
+                <a href="pages/productos.html" class="btn btn-outline btn-small">Ver más</a>
+            </article>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="benefits">
+            <div class="benefits-grid">
+                <div class="benefit"><span class="benefit-icon"><img src="assets/icons/envio.svg" alt="" width="30" height="30"></span><h3>Envíos a todo el país</h3><p>Seguimiento en línea</p></div>
+                <div class="benefit"><span class="benefit-icon"><img src="assets/icons/garantia.svg" alt="" width="30" height="30"></span><h3>Garantía certificada</h3><p>Joyas 100% originales</p></div>
+                <div class="benefit"><span class="benefit-icon"><img src="assets/icons/pago-seguro.svg" alt="" width="30" height="30"></span><h3>Pago 100% seguro</h3><p>Todos los medios de pago</p></div>
+                <div class="benefit"><span class="benefit-icon"><img src="assets/icons/asesoria.svg" alt="" width="30" height="30"></span><h3>Asesoría personalizada</h3><p>Atención por WhatsApp</p></div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <h2>Recibe 10% en tu primera compra</h2>
+            <p>Novedades y colecciones exclusivas</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <label for="correo-news" class="sr-only">Correo electrónico</label>
+                <input type="email" id="correo-news" name="correo" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-dark">Suscribirme</button>
+            </form>
+            <p class="newsletter-msg" role="status"></p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/icons/logo-dyd-joyeria.svg" alt="D&D Joyería" width="743" height="614">
+                    <div class="social">
+                        <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+                        <a href="#" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Tienda</h3>
+                    <ul>
+                        <li><a href="pages/productos.html">Anillos</a></li>
+                        <li><a href="pages/productos.html">Collares</a></li>
+                        <li><a href="pages/productos.html">Aretes</a></li>
+                        <li><a href="pages/productos.html">Pulseras</a></li>
+                        <li><a href="pages/productos.html">Tobilleras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="pages/quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="pages/productos.html">Productos</a></li>
+                        <li><a href="#">Garantía</a></li>
+                        <li><a href="#">Cuidado de tus joyas</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contáctenos</h3>
+                    <ul>
+                        <li><a href="pages/contactenos.html">Dirección</a></li>
+                        <li><a href="pages/contactenos.html">Teléfono / WhatsApp</a></li>
+                        <li><a href="pages/contactenos.html">Correo</a></li>
+                        <li><a href="pages/contactenos.html">Horario de atención</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 D &amp; D Joyería. Todos los derechos reservados.</p>
+                <p>Creado por Daniela Misas y Dariana Vivas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="importmap">
+    { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    } }
+    </script>
+    <script type="module" src="js/Joyas3d.js"></script>
+</body>
+</html>
