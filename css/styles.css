@@ -4,9 +4,9 @@
 :root {
     --negro: #000;
     --barra: #1a1a1a;
-    --amarillo: #F9C633;      /* Verifica el valor exacto con el cuentagotas en Illustrator */
-    --gris: #dedede;          /* Placeholders de imagen */
-    --gris-claro: #f1f1f1;    /* Franjas de beneficios y newsletter */
+    --amarillo: #F9C633;     
+    --gris: #dedede;        
+    --gris-claro: #f1f1f1;   
     --texto: #111;
     --texto-suave: #555;
     --fuente: 'Jost', 'Helvetica Neue', Arial, sans-serif;
