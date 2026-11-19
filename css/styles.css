@@ -367,3 +367,53 @@ h1, h2, h3 { line-height: 1.2; }
     .slide-3d .slide-kicker { margin-bottom: 10px; }
     .visor-hint { bottom: 8px; }
 }
+
+/* ===== Lightbox (solo CSS) ===== */
+.lightbox {
+    position: fixed; inset: 0; z-index: 2000;
+    display: grid; place-items: center;
+    background: rgba(0, 0, 0, .88);
+    opacity: 0; visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+.lightbox:target { opacity: 1; visibility: visible; }
+
+.lb-fondo { position: absolute; inset: 0; cursor: zoom-out; }
+
+.lightbox img {
+    position: relative; z-index: 1;
+    max-width: 90vw; max-height: 85vh;
+    width: auto; height: auto;
+    border: 1px solid var(--amarillo);
+    background: #fff;
+}
+
+.lb-cerrar, .lb-nav {
+    position: absolute; z-index: 2;
+    color: var(--amarillo);
+    line-height: 1;
+}
+.lb-cerrar { top: 18px; right: 28px; font-size: 2.6rem; }
+.lb-nav {
+    top: 50%; transform: translateY(-50%);
+    display: grid; place-items: center;
+    width: 44px; height: 44px;
+    border: 1px solid var(--amarillo); border-radius: 50%;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, .5);
+    transition: background .25s, color .25s;
+}
+.lb-nav:hover, .lb-cerrar:hover { background: var(--amarillo); color: #000; }
+.lb-cerrar:hover { background: none; color: #fff; }
+.lb-prev { left: 20px; }
+.lb-next { right: 20px; }
+
+/* Miniaturas con cursor de ampliar */
+.workshop-grid a, .product > a:first-child { display: block; cursor: zoom-in; }
+.workshop-grid a:hover img, .product > a:first-child:hover img { opacity: .85; }
+
+@media (max-width: 600px) {
+    .lb-prev { left: 8px; }
+    .lb-next { right: 8px; }
+    .lb-cerrar { right: 16px; }
+}
