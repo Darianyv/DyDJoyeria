@@ -417,3 +417,22 @@ h1, h2, h3 { line-height: 1.2; }
     .lb-next { right: 8px; }
     .lb-cerrar { right: 16px; }
 }
+
+/* ===== Pósters (inicio) ===== */
+.posters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 60px 0;
+}
+.poster { display: block; cursor: zoom-in; overflow: hidden; border: 1px solid #aaa; background: var(--gris); }
+.poster img {
+    display: block; width: 100%;
+    aspect-ratio: 4 / 5; object-fit: cover;
+    transition: transform .4s, opacity .3s;
+}
+.poster:hover img { transform: scale(1.03); opacity: .92; }
+
+@media (max-width: 600px) {
+    .posters { grid-template-columns: 1fr; gap: 16px; padding: 40px 0; }
+}
